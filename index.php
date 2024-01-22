@@ -4,8 +4,6 @@ require('vendor/autoload.php');
 use Lando\App\Configs\Config;
 use Lando\App\Controllers\Home\HomeController;
 
-echo $_SERVER['DOCUMENT_ROOT'];
-
 $config = new Config();
 $conn = $config->conn();
 
@@ -16,16 +14,16 @@ $googleAuthLink = $homeController->googleAuth->get_link();
 // $appleAuth = new AppleAuth($conn);
 
 switch ($request) {
-	case "dashboard":
-		header('location: dashboard');
-		exit;
-		break;
+    case "dashboard":
+        header('location: dashboard');
+        exit;
+        break;
 
     case "~new/preview/":
-    	include 'src/Views/Home/new/index.php';
-    	break;
+        include 'src/Views/Home/new/index.php';
+        break;
 
     default:
-    	include 'src/Views/Home/index.php';
-    	break;
+        include 'src/Views/Home/index.php';
+        break;
 }
