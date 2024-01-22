@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^(.+)$ /lando3/src/Views/Landings/1/index.php?landingHash=$1 [L,QSA]
+
+# RewriteEngine On
+# RewriteRule ^$ /src/Views/Landings/1/index.php [L]
+# RewriteRule ^(.+)$ /src/Views/Landings/1/index.php?landingHash=$1 [L,QSA]

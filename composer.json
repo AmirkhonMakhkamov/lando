@@ -1,0 +1,18 @@
+{
+    "name": "lando/app",
+    "description": "Lando AI",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lando\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amirkhon Makhkamov"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

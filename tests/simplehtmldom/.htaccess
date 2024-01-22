@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# php_value include_path ".:/Applications/XAMPP/xamppfiles/htdocs/lando3/src/Views/Landings/1/"
+# php_value include_path ".:/home/u598945047/domains/landoai.com/public_html/"

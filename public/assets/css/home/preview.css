@@ -1,0 +1,9 @@
+.landing_framebox {
+  	width: 100%;
+  	box-sizing: border-box;
+}
+
+.landing_framebox,
+.landing_framebox iframe {
+    transition: width 0.5s ease-in-out;
+}

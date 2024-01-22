@@ -1,1 +1,2 @@
-# lando
+# Lando AI
+Amirkhon Makhkamov

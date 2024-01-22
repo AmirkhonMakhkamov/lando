@@ -1,0 +1,108 @@
+.bg-light-blue{
+	background-color: rgb(246, 248, 252);
+}
+
+header{
+	height: 55px;
+}
+
+.pt-55{
+	padding-top: 55px;
+}
+
+.mt-55{
+	margin-top: 55px;
+}
+
+.pt-60{
+	padding-top: 60px;
+}
+
+.mt-60{
+	margin-top: 60px;
+}
+
+.left-nav{
+	height: 100vh;
+}
+
+.border-light{
+	border-color: rgb(236, 238, 242)!important;
+}
+
+.nav-btns button{
+	border: unset!important;
+}
+
+.nav-btns button.active{
+	border: unset!important;
+	background-color: rgba(69, 64, 222, 0.1);
+	color: #4640de;
+}
+
+.mvh-100--55{
+	min-height: calc(100vh - 55px);
+}
+
+.header-active-bar .active{
+	background-color: #efefef;
+}
+
+.btn-success.active{
+	background-color: #ccfd52!important;
+	border-color: #4640de!important;
+}
+
+.landing_framebox {
+  	width: 100%;
+  	box-sizing: border-box;
+}
+
+.landing_framebox,
+.landing_framebox iframe {
+    transition: width 0.5s ease-in-out;
+}
+
+
+.no-style-input{
+	border: none;
+}
+
+.no-style-input:focus{
+	border: none;
+	outline: none;
+}
+
+.text-frame{
+	position: absolute;
+	left: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .text-frame{
+        position: absolute;
+        left: 15%;
+    }
+}
+
+.show3lines{
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.show2lines{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.content-spinner{
+	width: 22px;
+	height: 22px;
+	border-width: 2px;
+	color: #efefef;
+}

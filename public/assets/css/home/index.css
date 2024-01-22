@@ -1,0 +1,27 @@
+.box-shadow{
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0-4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.rounded{
+	border-radius: 50px!important;
+}
+
+p{
+	font-weight: 300;
+}
+
+input{
+	font-weight: 300;
+}
+
+.top-main-txt{
+	font-size: 60px;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-main-txt{
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
