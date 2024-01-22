@@ -7,7 +7,7 @@ use Lando\App\Controllers\Home\HomeController;
 $config = new Config();
 $conn = $config->conn();
 
-phpinfo();
+echo get_include_path();
 
 $homeController = new HomeController($conn);
 $request = $homeController->get_request();
