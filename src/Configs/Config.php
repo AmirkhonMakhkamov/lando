@@ -24,37 +24,32 @@ class Config {
         $this->setCookies();
 	}
 
-	private function initializeErrorReporting(): void
-    {
+	private function initializeErrorReporting() {
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
     }
 
-    private function loadDotEnv(): void
-    {
+    private function loadDotEnv() {
         require __DIR__ . '/../../vendor/phpdotenv/vendor/autoload.php';
 
         $dotenv = Dotenv::createImmutable(__DIR__ . '/../..');
         $dotenv->load();
     }
 
-    private function setTimezone(): void
-    {
+    private function setTimezone() {
         date_default_timezone_set('America/New_York');
     }
 
-    private function setConstants(): void
-    {
+    private function setConstants() {
         define('TOKEN', $this->user->token);
         define('IP', $this->user->ip);
 
-        define('FILE_PATH', '/'.basename(get_include_path()).'/');
-        // define('FILE_PATH', '/');
+        // define('FILE_PATH', '/'.basename(get_include_path()).'/');
+        define('FILE_PATH', '/');
     }
 
-    private function setCookies(): void
-    {
+    private function setCookies() {
         // setcookie("dashboard_pageSlice", 2, 0, "/");
         setcookie("dashboard_pageSlice", 1, 0, "/");
 
