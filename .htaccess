@@ -15,7 +15,7 @@ AddDefaultCharset UTF-8
 
 # Set PHP include_path
 #php_value include_path ".:/Users/work/Documents/gitlando/"
-php_value include_path ".:/workspace/"
+#php_value include_path ".:/workspace/"
 
 # Check if the host is preview.landoai.com
 RewriteCond %{HTTP_HOST} ^preview\.landoai\.com$ [NC]
