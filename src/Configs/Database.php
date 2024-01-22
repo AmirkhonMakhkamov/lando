@@ -8,7 +8,8 @@ class Database {
         $this->connect();
     }
 
-    private function connect() {
+    private function connect(): void
+    {
         $this->conn = mysqli_connect(
             getenv('DB_SERVERNAME'),
             getenv('DB_USERNAME'),
@@ -29,7 +30,8 @@ class Database {
         $this->closeConnection();
     }
 
-    public function closeConnection() {
+    public function closeConnection(): void
+    {
         if ($this->conn) {
             mysqli_close($this->conn);
         }
