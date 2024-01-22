@@ -18,7 +18,7 @@ class Database {
         );
 
         if (!$this->conn) {
-            die('Error in db');
+            die('Connection failed: ' . mysqli_connect_error());
         }
     }
 
