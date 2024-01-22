@@ -34,7 +34,7 @@ class GoogleAuth {
         return $this->client->createAuthUrl();
     }
 
-    public function auth_user(){
+    public function auth_user() {
         $gToken = $this->client->fetchAccessTokenWithAuthCode($_GET['code']);
 
         if (!isset($gToken["error"])) {
@@ -55,9 +55,7 @@ class GoogleAuth {
             $user_id = $this->model->get_user($email, $this->provider, $provider_id);
 
             if (intval($user_id) > 0) {
-                return $this->model->login_user(
-                    $user_id,
-                );
+                $this->model->login_user($user_id);
             }else{
                 return $this->model->signup_user(
                     $first_name,
