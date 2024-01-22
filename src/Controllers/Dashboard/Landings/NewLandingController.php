@@ -95,7 +95,7 @@ class NewLandingController {
 
     private function modifyURL() {
         $parsedURL = parse_url($this->url);
-        parse_str($parsedURL['query'] ?? '', $query);
+        parse_str(isset($parsedURL['query']) ? $parsedURL['query'] : '', $query);
 
         if (isset($query['platform'])) {
             if ($query['platform'] !== 'iphone') {
@@ -106,7 +106,7 @@ class NewLandingController {
         }
 
         $newQuery = http_build_query($query);
-        return $parsedURL['scheme'] . '://' . $parsedURL['host'] . ($parsedURL['path'] ?? '') . '?' . $newQuery . ($parsedURL['fragment'] ?? '');
+        return $parsedURL['scheme'] . '://' . $parsedURL['host'] . (isset($parsedURL['path']) ? $parsedURL['path'] : '') . '?' . $newQuery . (isset($parsedURL['fragment']) ? $parsedURL['fragment'] : '');
     }
 
     private function gptSubtitles(){
