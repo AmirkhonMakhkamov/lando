@@ -7,6 +7,7 @@ use Lando\App\Controllers\Home\HomeController;
 $config = new Config();
 $conn = $config->conn();
 
+echo __DIR__;
 echo ini_get('include_path');
 echo "<pre>";
 print_r($_SESSION);

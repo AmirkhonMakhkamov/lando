@@ -14,8 +14,8 @@ RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 AddDefaultCharset UTF-8
 
 # Set PHP include_path
-#php_value include_path ".:/Users/work/Documents/gitlando/"
-php_value include_path ".:/workspace/"
+#php_value include_path ".:/Users/work/Documents/gitlando/lando/"
+#php_value include_path ".:/workspace/"
 
 # Check if the host is preview.landoai.com
 RewriteCond %{HTTP_HOST} ^preview\.landoai\.com$ [NC]
